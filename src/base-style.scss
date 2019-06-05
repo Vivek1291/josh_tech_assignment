@@ -1,0 +1,134 @@
+@import './variable';
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: "Klavika Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/Klavika-Regular.eot");
+    src: local('Klavika Regular'), local('KlavikaRegular')
+    url("./fonts/Klavika-Regular.woff") format("woff"),
+    url("./fonts/Klavika-Regular.ttf") format("truetype"),
+    url("fonts/Klavika-Regular.svg#KlavikaRegular") format("svg");
+}
+
+@font-face {
+    font-family: "Klavika Bold";
+    src: url("./fonts/Klavika-Bold.eot");
+    src: local('Klavika Bold'), local('KlavikaBold')
+    url("./fonts/Klavika-Bold.woff") format("woff"),
+    url("./fonts/Klavika-Bold.ttf") format("truetype"),
+    url("fonts/Klavika-Bold.svg#KlavikaBold") format("svg");
+}
+
+@font-face {
+    font-family: "Klavika Medium";
+    src: url("./fonts/Klavika-Medium.eot");
+    src: local('Klavika Medium'), local('KlavikaMedium')
+    url("./fonts/Klavika-Medium.woff") format("woff"),
+    url("./fonts/Klavika-Medium.ttf") format("truetype"),
+    url("fonts/Klavika-Medium.svg#KlavikaMedium") format("svg");
+}
+body {
+    font-family: 'kalvika Regular';
+}
+.right-align {
+    text-align: right;
+}
+.center-align {
+    text-align: center;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.hide-mid-and-low {
+    @media only screen and (max-width: 768px) {
+        display: none;
+    }
+}
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    &.overlay-blue {
+        background-color: rgba(#47908D, 0.7);
+    }
+
+    &.overlay-pink {
+        background-color: rgba(#CE5D63, 0.7);
+    }
+}
+
+.z-depth-1 {
+    @include box-shadow(0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2));
+}
+.z-depth-2 {
+    @include box-shadow(0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3));
+}
+
+.btn {
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    outline: 0;
+    padding: 0 2rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+    background-color: $blueColor1;
+    cursor: pointer;
+}
+
+.btn-transparent {
+    background-color: rgba(0,0,0, 0);
+    &:hover{
+        background-color: rgba(0,0,0,0.2);
+    }
+}
+
+.btn-primary {
+    background-color: $blueColor1;
+}
+
+
+
+.carousel.carousel-slider .control-arrow:hover {
+    background-color: rgba(0,0,0,0) !important;
+}
+
+.carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
+    border: none;
+}
+.carousel {
+    .control-arrow{
+        &.control-prev {
+            &::before {
+                content: ' \003C';
+            }
+        }   
+    }
+}
+
+.carousel {
+    .control-arrow{
+        &.control-next {
+            &::before {
+                content: ' \003E';
+            }
+        }   
+    }
+}
+.carousel .control-next.control-arrow:before { 
+    border: none;
+}

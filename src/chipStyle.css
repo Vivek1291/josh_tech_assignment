@@ -1,0 +1,16 @@
+/* line 2, chipStyle.scss */
+.chip-container {
+  padding: 20px 0;
+}
+/* line 5, chipStyle.scss */
+.chip-container span {
+  display: inline-block;
+  background-color: #168984;
+  padding: 5px 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  color: #fff;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}

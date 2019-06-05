@@ -1,0 +1,14 @@
+@import './variable';
+.chip-container {
+    padding: 20px 0;
+
+    span {
+        display: inline-block;
+        background-color: $greenColor;
+        padding: 5px 15px;
+        @include border-radius(15px);
+        color: $whiteColor;
+        margin-right: 15px;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,329 @@
+@import './variable';
+
+.navigation-container {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background: transparent;
+    z-index: 10;
+    color: #ffffff;
+    .navigation-content {
+       padding: 0 30px;
+
+       .logo-title {
+           display: inline;
+       }
+
+       
+        .navigation-links {
+            // display: inline-block;
+            margin: 0;
+            height: 60px;
+            float: right;
+            padding-left: 0;
+            &::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            li {
+                display: inline-block;
+                list-style-type: none;
+                a {
+                    display: block;
+                    padding: 0 30px;
+                    text-decoration: none;
+                    color: #ffffff;
+                }
+                
+                .active {
+                    font-weight: 700;        
+                }
+            }
+        }
+    }
+}
+
+.page-section {
+    padding: 50px;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.page-content {
+
+    .profile-heading {
+        padding-bottom: 20px;
+        h1 {
+            font-weight: 400;
+            text-transform: capitalize;
+        }
+        .text-highlight {
+            font-weight: 700;
+        }
+    }
+    .container {
+        max-width: 900px;        
+    }
+
+    .icons-container {
+        @media only screen and (min-width: 768px) {    
+            width: 40%;
+            float: left;
+            border-right: 2px solid $greyColor1;
+        }
+
+        .icons-content {
+            width: 50%;
+            float: left;
+            .icon-container {
+                @include border-radius(50%);
+                display: inline-block;
+                margin-top: 5px;
+                margin-bottom: 5px;
+
+            }
+            .icon-container-1 {
+                width: 90px;
+                height: 90px;                
+            }
+            .icon-container-2 {
+                width: 85px;
+                height: 85px;
+            }
+            
+            .icon-container-3 {
+                width: 75px;
+                height: 75px;
+            }
+            
+            .icon-container-4 {
+                width: 65px;
+                height: 65px;
+            }
+            
+            .icon-container-5 {
+                width: 55px;
+                height: 55px;
+            }
+            
+            .icon-container-6 {
+                width: 45px;
+                height: 45px;
+            }
+            .icon {
+                max-width: 100%;
+            }
+            .icon-organizer {
+                background-color: $blueColor;
+            }
+
+            .icon-doer {
+                background-color: $redColor;
+            }
+            .icon-advisor {
+                background-color: $purpleColor;
+            }
+            .icon-original {
+                background-color: $yellowColor;
+            }
+            .icon-connector {
+                background-color: $orangeColor;
+            }
+            .icon-dreamer {
+                background-color: $greenColor;
+            }
+        }
+    }
+    .content-container {
+        margin-top: 30px;
+        @media only screen and (min-width: 768px) {    
+            width: 59%;
+            float: left;
+            margin-top: 0;
+        }
+        // width: 59%;
+        // float: left;
+
+        .content-heading {
+            @media only screen and (max-width: 768px) {
+                font-size: 20px;
+                font-weight: 400;
+            }
+            font-weight: 500;
+            font-size: 30px;
+
+            .title-color-1 {
+                color: $blueColor;
+                margin-right: 15px;
+            }
+            .title-color-2 {
+                color: $greenColor;
+                margin-left: 15px;
+            }
+        }
+
+        .button-container {
+            ul {
+                padding-left: 0;
+                margin: 0;
+                display: inline-block;
+                .add-button-container {
+                    border-right: 2px solid $blackColor; 
+                }
+                li {
+                    list-style-type: none;
+                    display: inline-block;
+                    padding: 0 10px;
+                    height: 25px;
+                    .btn {
+                        padding: 0 5px;
+                        height: 25px;
+                        line-height: 25px;
+                        font-size: 12px;
+                        font-weight: bold;
+                        .material-icons{
+                            line-height: 24px;
+                            font-size: 18px;
+
+                            &::after {
+                                content: "";
+                                display: table;
+                                clear: both;
+                            }
+                        }
+
+                        &.icon-left-align {
+                            .material-icons{
+                                float: left;
+                                margin-right: 5px;
+
+                            }
+                        }
+                        
+                        &.icon-right-align {
+                            .material-icons{
+                                float: right;
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .input-field-container {
+            visibility: hidden;
+            opacity: 0;
+            height: 0;
+            @include transition(all .5s linear);
+
+            &.open {
+                visibility: visible;
+                opacity: 1;
+                height: 170px;
+                padding: 20px;
+                @include border-radius(5px);
+                margin-top: 20px;
+                @include transition(all .5s linear);
+                .form-container {
+                    visibility: visible;
+                    opacity: 1;
+                    height: auto;
+                    @include transition(all .5s linear);
+                }
+            }
+            .form-container {
+                visibility: hidden;
+                opacity: 0;
+                height: 0;
+                @include transition(all .5s linear);
+                input {
+                    width: 100%;
+                    padding: 5px;
+                    margin: 10px 0;
+                    @include box-sizing(border-box);
+
+                }
+                .input-textarea {
+                    height: 60px;
+                }
+            }
+
+            .action-button-container {
+                ul {
+                    padding: 0;
+                    li {
+                        list-style-type: none;
+                        display: inline-block;
+                        padding: 0 5px;
+                        .btn {
+                            padding: 0 15px;
+                        }
+                        .btn-primary {
+                            color: $whiteColor;
+                        }
+                    }
+                }
+            }    
+        }
+        .card {
+            padding: 20px 10px;
+
+            .collapsible-header {
+                position: relative;
+                padding: 20px;
+                margin-bottom: 25px;
+                @include border-radius(5px);
+                .collapsible-heading {
+                    cursor: pointer;
+                    height: 30px;
+                    line-height: 30px;
+                    padding-right: 30px;
+                }
+                .header-title {
+                    padding-right: 25px;
+                }
+                .close-icon{
+                    position: absolute;
+                    right: 0;
+                    top: 15px;
+                    z-index: 10;
+                }
+                
+                .collapsible-body {
+                    visibility: hidden;
+                    opacity: 0;
+                    height: 0;
+                    @include transition(all .2s linear);
+                    &.open {
+                    visibility: visible;
+                    opacity: 1;
+                    height: auto;
+                    @include transition(all .5s linear);
+                    }
+                }
+                .material-icons {
+                    position: absolute;
+                    right: 10px;
+                    top: 15px;
+                    background-color: $redColor1;
+                    padding: 5px;
+                    @include border-radius(50%);
+                    color: $whiteColor;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,382 @@
+/* line 3, app.scss */
+.navigation-container {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background: transparent;
+  z-index: 10;
+  color: #ffffff;
+}
+/* line 11, app.scss */
+.navigation-container .navigation-content {
+  padding: 0 30px;
+}
+/* line 14, app.scss */
+.navigation-container .navigation-content .logo-title {
+  display: inline;
+}
+/* line 19, app.scss */
+.navigation-container .navigation-content .navigation-links {
+  margin: 0;
+  height: 60px;
+  float: right;
+  padding-left: 0;
+}
+/* line 25, app.scss */
+.navigation-container .navigation-content .navigation-links::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 30, app.scss */
+.navigation-container .navigation-content .navigation-links li {
+  display: inline-block;
+  list-style-type: none;
+}
+/* line 33, app.scss */
+.navigation-container .navigation-content .navigation-links li a {
+  display: block;
+  padding: 0 30px;
+  text-decoration: none;
+  color: #ffffff;
+}
+/* line 40, app.scss */
+.navigation-container .navigation-content .navigation-links li .active {
+  font-weight: 700;
+}
+
+/* line 48, app.scss */
+.page-section {
+  padding: 50px;
+}
+
+/* line 52, app.scss */
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+/* line 57, app.scss */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 66, app.scss */
+.page-content .profile-heading {
+  padding-bottom: 20px;
+}
+/* line 68, app.scss */
+.page-content .profile-heading h1 {
+  font-weight: 400;
+  text-transform: capitalize;
+}
+/* line 72, app.scss */
+.page-content .profile-heading .text-highlight {
+  font-weight: 700;
+}
+/* line 76, app.scss */
+.page-content .container {
+  max-width: 900px;
+}
+@media only screen and (min-width: 768px) {
+  /* line 80, app.scss */
+  .page-content .icons-container {
+    width: 40%;
+    float: left;
+    border-right: 2px solid #f0f0f0;
+  }
+}
+/* line 87, app.scss */
+.page-content .icons-container .icons-content {
+  width: 50%;
+  float: left;
+}
+/* line 90, app.scss */
+.page-content .icons-container .icons-content .icon-container {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/* line 97, app.scss */
+.page-content .icons-container .icons-content .icon-container-1 {
+  width: 90px;
+  height: 90px;
+}
+/* line 101, app.scss */
+.page-content .icons-container .icons-content .icon-container-2 {
+  width: 85px;
+  height: 85px;
+}
+/* line 106, app.scss */
+.page-content .icons-container .icons-content .icon-container-3 {
+  width: 75px;
+  height: 75px;
+}
+/* line 111, app.scss */
+.page-content .icons-container .icons-content .icon-container-4 {
+  width: 65px;
+  height: 65px;
+}
+/* line 116, app.scss */
+.page-content .icons-container .icons-content .icon-container-5 {
+  width: 55px;
+  height: 55px;
+}
+/* line 121, app.scss */
+.page-content .icons-container .icons-content .icon-container-6 {
+  width: 45px;
+  height: 45px;
+}
+/* line 125, app.scss */
+.page-content .icons-container .icons-content .icon {
+  max-width: 100%;
+}
+/* line 128, app.scss */
+.page-content .icons-container .icons-content .icon-organizer {
+  background-color: #4f8bc9;
+}
+/* line 132, app.scss */
+.page-content .icons-container .icons-content .icon-doer {
+  background-color: #d54255;
+}
+/* line 135, app.scss */
+.page-content .icons-container .icons-content .icon-advisor {
+  background-color: #784496;
+}
+/* line 138, app.scss */
+.page-content .icons-container .icons-content .icon-original {
+  background-color: #edaa1e;
+}
+/* line 141, app.scss */
+.page-content .icons-container .icons-content .icon-connector {
+  background-color: #f46b3d;
+}
+/* line 144, app.scss */
+.page-content .icons-container .icons-content .icon-dreamer {
+  background-color: #168984;
+}
+/* line 149, app.scss */
+.page-content .content-container {
+  margin-top: 30px;
+}
+@media only screen and (min-width: 768px) {
+  /* line 149, app.scss */
+  .page-content .content-container {
+    width: 59%;
+    float: left;
+    margin-top: 0;
+  }
+}
+/* line 159, app.scss */
+.page-content .content-container .content-heading {
+  font-weight: 500;
+  font-size: 30px;
+}
+@media only screen and (max-width: 768px) {
+  /* line 159, app.scss */
+  .page-content .content-container .content-heading {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+/* line 167, app.scss */
+.page-content .content-container .content-heading .title-color-1 {
+  color: #4f8bc9;
+  margin-right: 15px;
+}
+/* line 171, app.scss */
+.page-content .content-container .content-heading .title-color-2 {
+  color: #168984;
+  margin-left: 15px;
+}
+/* line 178, app.scss */
+.page-content .content-container .button-container ul {
+  padding-left: 0;
+  margin: 0;
+  display: inline-block;
+}
+/* line 182, app.scss */
+.page-content .content-container .button-container ul .add-button-container {
+  border-right: 2px solid #000;
+}
+/* line 185, app.scss */
+.page-content .content-container .button-container ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 10px;
+  height: 25px;
+}
+/* line 190, app.scss */
+.page-content .content-container .button-container ul li .btn {
+  padding: 0 5px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  font-weight: bold;
+}
+/* line 196, app.scss */
+.page-content .content-container .button-container ul li .btn .material-icons {
+  line-height: 24px;
+  font-size: 18px;
+}
+/* line 200, app.scss */
+.page-content .content-container .button-container ul li .btn .material-icons::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 208, app.scss */
+.page-content .content-container .button-container ul li .btn.icon-left-align .material-icons {
+  float: left;
+  margin-right: 5px;
+}
+/* line 216, app.scss */
+.page-content .content-container .button-container ul li .btn.icon-right-align .material-icons {
+  float: right;
+  margin-left: 5px;
+}
+/* line 226, app.scss */
+.page-content .content-container .input-field-container {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+/* line 232, app.scss */
+.page-content .content-container .input-field-container.open {
+  visibility: visible;
+  opacity: 1;
+  height: 170px;
+  padding: 20px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin-top: 20px;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+/* line 240, app.scss */
+.page-content .content-container .input-field-container.open .form-container {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+/* line 247, app.scss */
+.page-content .content-container .input-field-container .form-container {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+/* line 252, app.scss */
+.page-content .content-container .input-field-container .form-container input {
+  width: 100%;
+  padding: 5px;
+  margin: 10px 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 259, app.scss */
+.page-content .content-container .input-field-container .form-container .input-textarea {
+  height: 60px;
+}
+/* line 265, app.scss */
+.page-content .content-container .input-field-container .action-button-container ul {
+  padding: 0;
+}
+/* line 267, app.scss */
+.page-content .content-container .input-field-container .action-button-container ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 5px;
+}
+/* line 271, app.scss */
+.page-content .content-container .input-field-container .action-button-container ul li .btn {
+  padding: 0 15px;
+}
+/* line 274, app.scss */
+.page-content .content-container .input-field-container .action-button-container ul li .btn-primary {
+  color: #fff;
+}
+/* line 281, app.scss */
+.page-content .content-container .card {
+  padding: 20px 10px;
+}
+/* line 284, app.scss */
+.page-content .content-container .card .collapsible-header {
+  position: relative;
+  padding: 20px;
+  margin-bottom: 25px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 289, app.scss */
+.page-content .content-container .card .collapsible-header .collapsible-heading {
+  cursor: pointer;
+  height: 30px;
+  line-height: 30px;
+  padding-right: 30px;
+}
+/* line 295, app.scss */
+.page-content .content-container .card .collapsible-header .header-title {
+  padding-right: 25px;
+}
+/* line 298, app.scss */
+.page-content .content-container .card .collapsible-header .close-icon {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  z-index: 10;
+}
+/* line 305, app.scss */
+.page-content .content-container .card .collapsible-header .collapsible-body {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+/* line 310, app.scss */
+.page-content .content-container .card .collapsible-header .collapsible-body.open {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+/* line 317, app.scss */
+.page-content .content-container .card .collapsible-header .material-icons {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  background-color: #df1d42;
+  padding: 5px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  color: #fff;
+}

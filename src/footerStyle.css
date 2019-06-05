@@ -1,0 +1,43 @@
+/* line 3, footerStyle.scss */
+.footer-container {
+  padding: 20px 30px;
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 0;
+}
+/* line 8, footerStyle.scss */
+.footer-container ul {
+  padding: 0;
+  margin: 0;
+}
+@media only screen and (max-width: 768px) {
+  /* line 8, footerStyle.scss */
+  .footer-container ul {
+    display: none;
+  }
+}
+/* line 14, footerStyle.scss */
+.footer-container ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 30px;
+  line-height: 36px;
+}
+/* line 20, footerStyle.scss */
+.footer-container ul li a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+/* line 28, footerStyle.scss */
+.footer-container .footer-title {
+  font-family: 'Klavika Bold';
+  margin: 0;
+  line-height: 36px;
+}
+@media only screen and (max-width: 768px) {
+  /* line 28, footerStyle.scss */
+  .footer-container .footer-title {
+    font-size: 20px;
+  }
+}

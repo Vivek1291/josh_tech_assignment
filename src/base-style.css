@@ -1,0 +1,139 @@
+/* line 3, base-style.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "Klavika Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/Klavika-Regular.eot");
+  src: local("Klavika Regular"), local("KlavikaRegular") url("./fonts/Klavika-Regular.woff") format("woff"), url("./fonts/Klavika-Regular.ttf") format("truetype"), url("fonts/Klavika-Regular.svg#KlavikaRegular") format("svg");
+}
+@font-face {
+  font-family: "Klavika Bold";
+  src: url("./fonts/Klavika-Bold.eot");
+  src: local("Klavika Bold"), local("KlavikaBold") url("./fonts/Klavika-Bold.woff") format("woff"), url("./fonts/Klavika-Bold.ttf") format("truetype"), url("fonts/Klavika-Bold.svg#KlavikaBold") format("svg");
+}
+@font-face {
+  font-family: "Klavika Medium";
+  src: url("./fonts/Klavika-Medium.eot");
+  src: local("Klavika Medium"), local("KlavikaMedium") url("./fonts/Klavika-Medium.woff") format("woff"), url("./fonts/Klavika-Medium.ttf") format("truetype"), url("fonts/Klavika-Medium.svg#KlavikaMedium") format("svg");
+}
+/* line 35, base-style.scss */
+body {
+  font-family: 'kalvika Regular';
+}
+
+/* line 38, base-style.scss */
+.right-align {
+  text-align: right;
+}
+
+/* line 41, base-style.scss */
+.center-align {
+  text-align: center;
+}
+
+/* line 44, base-style.scss */
+.left {
+  float: left;
+}
+
+/* line 47, base-style.scss */
+.right {
+  float: right;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 50, base-style.scss */
+  .hide-mid-and-low {
+    display: none;
+  }
+}
+
+/* line 55, base-style.scss */
+.overlay-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+/* line 62, base-style.scss */
+.overlay-container.overlay-blue {
+  background-color: rgba(71, 144, 141, 0.7);
+}
+/* line 66, base-style.scss */
+.overlay-container.overlay-pink {
+  background-color: rgba(206, 93, 99, 0.7);
+}
+
+/* line 71, base-style.scss */
+.z-depth-1 {
+  -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* line 74, base-style.scss */
+.z-depth-2 {
+  -moz-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+/* line 78, base-style.scss */
+.btn {
+  border: none;
+  border-radius: 2px;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  outline: 0;
+  padding: 0 2rem;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+  background-color: #6DCDDD;
+  cursor: pointer;
+}
+
+/* line 93, base-style.scss */
+.btn-transparent {
+  background-color: transparent;
+}
+/* line 95, base-style.scss */
+.btn-transparent:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* line 100, base-style.scss */
+.btn-primary {
+  background-color: #6DCDDD;
+}
+
+/* line 106, base-style.scss */
+.carousel.carousel-slider .control-arrow:hover {
+  background-color: transparent !important;
+}
+
+/* line 110, base-style.scss */
+.carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
+  border: none;
+}
+
+/* line 116, base-style.scss */
+.carousel .control-arrow.control-prev::before {
+  content: ' \003C';
+}
+
+/* line 126, base-style.scss */
+.carousel .control-arrow.control-next::before {
+  content: ' \003E';
+}
+
+/* line 132, base-style.scss */
+.carousel .control-next.control-arrow:before {
+  border: none;
+}
